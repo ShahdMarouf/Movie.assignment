@@ -1,0 +1,25 @@
+<p>page works!</p>
+
+
+<div class="container">
+    <h2 class="">Movies</h2>
+    <div class="row gy-2 ">
+       @for (movie of list; track $index) {
+
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-img">
+                    <img [src]="Url+movie.poster_path" class="w-100" >
+                </div>
+                <div class="card-body">
+                    <h2>{{movie.title}}</h2>
+                    <p>{{movie.overview}}</p>
+
+                    <p></p>
+                </div>
+            </div>
+        </div>
+       }
+
+    </div>
+</div>
